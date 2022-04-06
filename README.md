@@ -33,3 +33,7 @@ Database (MySql)
 * Muhammed Yumer Chalashkan
 * Tea Papa
 * Yusuf Bera Ermis
+
+
+
+This is project developed by a group of 7 students for the course of Software Engieneering in Epoka University (year 2022)
