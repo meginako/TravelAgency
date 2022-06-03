@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-family: system-ui;
+    background: #E5E5E5;
+  }
+  
+  .visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+    
+  }
+  
+  h1 {
+    color: black;
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .nav{
+    flex-direction: row;  
+  }
+  
+  .container {
+    overflow: hidden;
+    padding: 30px;
+    margin-top: 2em;
+    background: rgba(0,0,0,.1)
+  }
+ 
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 350px;
+    --card-height: 400px;
+    --carousel-min-width: 500px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+  }
+  
+  @media screen and (max-width: 1040px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 100px) / 2)
+    }
+  }
+  
+  .card-carousel.smooth-return {
+    transition: all .2s ease;
+  }
+  
+  .card-carousel .card {
+    background: whitesmoke;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: rgba(0,0,0,.5);
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card.highlight {
+    filter: brightness(1)
+  }
+  
+  
+  .card:nth-of-type(1) .image-container {
+      background-image: url("https://static.addtoany.com/images/dracaena-cinnabari.jpg");
+  }
+   
+  .card:nth-of-type(2) .image-container {
+    background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")
+  }
+  
+  .card:nth-of-type(3) .image-container {
+    background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+  }
+  .card:nth-of-type(4) .image-container {
+    background-image: url("https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+  }
+  .card:nth-of-type(5) .image-container {
+    background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg")
+  }
+  
+  
+  
+  .image-container {
+    width: 20em;
+    height: 20em;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 2em;
+    border-radius: 5%;
+    padding: 1em;
+    -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+    
+  }
+  
+  
+  
+  h2 {
+    padding: 1em;
+    margin-top: 1em;
+    background: rgba(0,0,0,.3);
+    text-align: center;
+    color: white;
+    border-radius: .2em;
+    display: inline-block;
+    transform: translateX(calc((100vw - 100%) / 2))
+  }
+  
+  h2 a {
+    color: #f5b916
+  }
