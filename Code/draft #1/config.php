@@ -1,3 +1,0 @@
-<?php
-$title = 'Where To';
-
